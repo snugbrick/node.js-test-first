@@ -14,11 +14,13 @@ function aFun() {
 console.log(new classt().method1());
 aFun();
 
-var msg = function () {console.log("1")};
+var msg = function () {
+  console.log("1");
+};
 var msg2 = {
-  function(){
-    console.log("2")
-  }
+  function() {
+    console.log("2");
+  },
 };
 msg();
 msg2.function();
