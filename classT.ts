@@ -24,3 +24,9 @@ var msg2 = {
 };
 msg();
 msg2.function();
+
+let myMap = new Map([
+  ["key1", "value1"],
+  ["key2", "value2"],
+]);
+console.log(myMap.get("key1"));
