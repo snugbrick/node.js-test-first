@@ -30,3 +30,4 @@ let myMap = new Map([
   ["key2", "value2"],
 ]);
 console.log(myMap.get("key1"));
+
