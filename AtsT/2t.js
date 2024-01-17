@@ -8,3 +8,8 @@ console.log(typeof date);
 date = 1;
 
 console.log(typeof date);
+
+exports.add = function () {
+    var i = 0
+    console.log(i)
+}
