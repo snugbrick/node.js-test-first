@@ -1,12 +1,11 @@
 {
-    "name": "test",
-    "version": "1.0.0",
-    "description": "a try",
-    "main": "cn/snugbrick/index.js",
-    "scripts": {
-      "start": "node cn/snugbrick/index.js"
-    },
-    "author": "snugbrick",
-    "license": "MIT"
-  }
-  
+  "name": "test",
+  "version": "1.0.0",
+  "description": "a try",
+  "main": "cn/snugbrick/index.cjs",
+  "scripts": {
+    "start": "node cn/snugbrick/index.cjs"
+  },
+  "author": "snugbrick",
+  "license": "MIT"
+}

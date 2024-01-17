@@ -9,7 +9,7 @@ date = 1;
 
 console.log(typeof date);
 
-exports.add = function () {
+exports.add = function (num) {
     var i = 0
-    console.log(i)
+    console.log(i + num)
 }
