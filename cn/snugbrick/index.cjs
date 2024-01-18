@@ -2,6 +2,8 @@ var mAdd = require('./2t.js')
 var fs = require('fs')
 var http = require('http')
 var events = require('events');
+var bufTest=require('./bufferTest.js')
+bufTest
 
 var eventEmitter = new events.EventEmitter();
 var eventHandler = function () {
