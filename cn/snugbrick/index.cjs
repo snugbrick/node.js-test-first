@@ -3,6 +3,8 @@ var fs = require('fs')
 var http = require('http')
 var events = require('events');
 var bufTest=require('./bufferTest.js')
+var streamTest=require('./stream.cjs')
+streamTest
 bufTest
 
 var eventEmitter = new events.EventEmitter();
@@ -11,7 +13,7 @@ var eventHandler = function () {
 }
 eventEmitter.on('eventName', eventHandler);
 eventEmitter.on('data_received', function () {
-    console.log('数据接收成功。');
+    console.log('data recieved :)');
 });
 
 eventEmitter.emit('eventName');

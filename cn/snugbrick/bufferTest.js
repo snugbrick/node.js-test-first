@@ -8,17 +8,19 @@ const json = JSON.stringify(buf);
 console.log(json);
 
 const copy = JSON.parse(json, (key, value) => {
-  return value && value.type === 'Buffer' ?
-    Buffer.from(value.data) :
-    value;
+    return value && value.type === 'Buffer' ?
+        Buffer.from(value.data) :
+        value;
 });
 
 var buffer1 = Buffer.from('genshin');
 var buffer2 = Buffer.from(' impact');
-var buffer3 = Buffer.concat([buffer1,buffer2]);
+var buffer3 = Buffer.concat([buffer1, buffer2]);
 console.log("buffer3: " + buffer3.toString());
 
 console.log(copy);
 
 buffer.write("impact ")
 console.log(buffer.toString())
+var buffer2 = buffer.slice(0, 2)
+console.log(buffer2.toString())
