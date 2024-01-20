@@ -4,6 +4,8 @@ var http = require('http')
 var events = require('events');
 var bufTest=require('./bufferTest.js')
 var streamTest=require('./stream.cjs')
+var funcTest=require('./funcTest.cjs')
+funcTest
 streamTest
 bufTest
 
