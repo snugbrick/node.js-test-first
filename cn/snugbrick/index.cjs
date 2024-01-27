@@ -1,3 +1,4 @@
+console.time('1')
 var mAdd = require('./2t.js')
 var fs = require('fs')
 var http = require('http')
@@ -5,6 +6,7 @@ var events = require('events');
 var bufTest=require('./bufferTest.js')
 var streamTest=require('./stream.cjs')
 var funcTest=require('./funcTest.cjs')
+console.time('2')
 funcTest
 streamTest
 bufTest
@@ -32,3 +34,5 @@ http.createServer(function (req, res) {
     res.write(data.toString());
     res.end();
 });
+console.timeEnd('1')
+console.timeEnd('2')

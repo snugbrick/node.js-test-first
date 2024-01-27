@@ -1,0 +1,42 @@
+.container {
+    font-size: 16px;
+    font-family: consolas;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* 未访问链接*/
+a:visited {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+/* 已访问链接 */
+a:hover {
+    color: #FF00FF;
+    text-decoration: none;
+}
+
+/* 鼠标移动到链接上 */
+a:active {
+    color: #0000FF;
+    text-decoration: none;
+}
+
+/* 鼠标点击时 */
+
+.box{
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+div.content{
+    border-radius: 0cap;
+    border-top-style:dotted;
+    border-right-style:solid;
+    border-bottom-style:dotted;
+    border-left-style:solid;
+}
