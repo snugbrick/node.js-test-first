@@ -1,19 +1,10 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="genshin" />
-
-    <ol>
-      <li>
-        {{ site }}
-      </li>
-    </ol>
-  </div>
+  <img alt="Vue logo" src="./assets/logo.png">
+  <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Vue from 'vue'
 
 export default {
   name: 'App',
@@ -21,15 +12,6 @@ export default {
     HelloWorld
   }
 }
-const app = {
-  data() {
-    return {
-      site: 1
-    }
-  }
-}
-
-Vue.createApp(app).mount(app)
 </script>
 
 <style>
