@@ -1,0 +1,230 @@
+/*我居然给每个都写了注释，我天，我真伟大*/
+* {
+    margin: 0;
+    /*初始化所有元素边距为0*/
+    padding: 0;
+    /*初始化所有元素填充为0*/
+    box-sizing: border-box;
+    font-family: consolas;
+    /*设置字体*/
+}
+
+body {
+
+    background-color: #e4fffd;
+    /*背景*/
+
+    background-image: linear-gradient(to right, #d6fffd, #f8fff8);
+    /*渐变背景*/
+}
+
+.title {
+    position: fixed;
+    /*静止于浏览器界面*/
+
+    width: 100%;
+    /*宽度百分百*/
+    height: 110px;
+    /*高度110像素*/
+    border-radius: 0 0 10px 10px;
+    /*上面直角下面圆角*/
+    background: linear-gradient(to right, #dbfffd, #e8ffe9);
+    /*渐变背景*/
+    box-shadow: 0 2px 10px rgba(7, 27, 26, 0.2);
+    /*box阴影*/
+
+    z-index: 1;
+    /*遮盖等级最高*/
+    opacity: 0.9;
+    /*0.9透明比例*/
+
+    backdrop-filter: blur(10px);/*背景模糊*/
+}
+
+.content {
+    text-align: center;
+    /*文本居中*/
+    font-size: 500%;
+    /*字体百分之五百*/
+}
+
+a {
+    transition-duration: 0.5s;
+    /*转换时间0.5s*/
+}
+
+a:link {
+    color: #429692;
+    /*未选中时颜色*/
+    text-decoration: none;
+    /*取消超链接下划线*/
+}
+
+a:visited {
+    color: #152c75;
+    /*已浏览过的颜色*/
+
+}
+
+a:active {
+    color: #36338d;
+    /*选中后颜色*/
+    text-decoration: none;
+    /*去雄下划线*/
+}
+
+.box {
+    display: inline-block;
+    /*设置内联快捷元素*/
+
+    position: absolute;
+    /*设置位置为相对位置*/
+
+    top: 80%;
+    /*相对位置顶端*/
+    left: 47%;
+    /*左端*/
+    transform: translate(-50%, -50%);
+    /*将元素沿着其自身宽度和高度的50%进行水平和垂直方向上的平移*/
+
+    text-align: center;
+    /*字体居中*/
+    width: 80px;
+    /*宽度80像素*/
+    height: 20px;
+    /*高度20像素*/
+    border-radius: 4px;
+    /*4px圆角*/
+
+    transition-duration: 0.4s;
+    /*切换时间0.4s*/
+}
+
+.box2 {
+    display: inline-block;
+    /*内联快捷元素*/
+    position: absolute;
+    /*相对位置*/
+
+    top: 80%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    width: 80px;
+    height: 20px;
+    border-radius: 4px;
+
+    transition-duration: 0.4s;
+}
+
+.box img,
+.box2 img {
+    max-height: 20px;
+    /* 图片的最大高度 */
+    max-width: 25px;
+    /* 保持图片的横款比 */
+}
+
+.box,
+.box2 {
+    display: flex;
+    /*弹性布局*/
+    align-items: center;
+    /*垂直居中对齐Flex项目*/
+    justify-content: space-between;
+    /*项目之间有一定间隔*/
+}
+
+.box img,
+.box a,
+.box2 img,
+.box2 a {
+    flex: 1;
+    /*让图片和链接占据相同的空间*/
+    text-align: center;
+    /*文本居中*/
+    padding: 2px;
+    /*添加内边距*/
+}
+
+.box a:hover,
+.box2 a:hover {
+    color: white;
+    /*鼠标覆盖时颜色*/
+    text-decoration: none;
+    /*取消下划线*/
+
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+/*
+.box:hover img,
+.box2:hover img {
+    filter: invert(100%);/*反转颜色
+}*/
+
+/*内容图片*/
+.webContent img {
+    width: 100%;
+    height: auto;
+    /*保证图片比例*/
+}
+
+/*下方内容*/
+.leftContent {
+    position: absolute;
+
+    top: 100%;
+    transform: translate(20%, -50%);
+
+    width: 20%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    /*圆角界面*/
+    box-shadow: 0 2px 10px rgba(17, 46, 44, 0.2);
+
+    background-color: white;
+    opacity: 0.8;
+}
+
+.rightContent {
+    position: absolute;
+
+    top: 100%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+
+    width: 60%;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    /*圆角界面*/
+    box-shadow: 0 2px 10px rgba(17, 46, 44, 0.2);
+
+    background-color: white;
+    opacity: 0.8;
+}
+
+/*左侧服务器内容*/
+.server1 {
+    position: absolute;
+
+    top: 5%;
+    left: 10%;
+
+    width: 80%;
+    height: 20%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 2px 10px rgba(4, 12, 11, 0.2);
+
+    background-color: white;
+}
+
+.server1 h1 {
+    position: absolute;
+
+    top: 25%;
+    left: 25%;
+
+}
